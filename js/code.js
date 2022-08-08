@@ -64,9 +64,6 @@ const handleCellClick = (clickedEvent) => {
 }
 
 
-
-
-
 const handleRestarGmae = () => {
     gameActive = true
     player = 'X'
@@ -83,12 +80,6 @@ const restarGameState = () => {
 
 
 }
-
-
-
-
-
-
 
 const handleCellPlayer = (clickedCell, clickedCellIndex) => {
     game_state[clickedCellIndex] = player
@@ -125,30 +116,16 @@ const hadleResultValidation = () => {
         return
 
     }
-
-
-
-
-
-
-
     handlePlayerChange()
 
     gamerChange()
-
 }
-
-
 
 const handlePlayerChange = () => {
 
     player = player === 'X' ? 'O' : 'X'
     handleStatusDisplay(current_player_turn())
-
-
-
 }
-
 
 const gamerChange = () => {
 
@@ -159,13 +136,6 @@ const gamerChange = () => {
     }
 
     handleStatusDisplay(current_player_turn())
-
-
 }
-
-
-
-
-
 
 main()
